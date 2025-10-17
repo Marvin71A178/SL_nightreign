@@ -1,0 +1,25 @@
+[2025-10-16 20:44:00][2025-10-16 20:52:06][2025-10-16 20:52:06] PyGetWindowException: Error code from Windows: 0 - 操作順利完成。
+Traceback (most recent call last):
+  File "E:\SL_nightreign\main.py", line 727, in <module>
+    config_manager.main()
+  File "E:\SL_nightreign\main.py", line 633, in main
+    elden.activate()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\pygetwindow\_pygetwindow_win.py", line 246, in activate
+    _raiseWithLastError()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\pygetwindow\_pygetwindow_win.py", line 99, in _raiseWithLastError
+    raise PyGetWindowException('Error code from Windows: %s - %s' % (errorCode, _formatMessage(errorCode)))
+pygetwindow.PyGetWindowException: Error code from Windows: 0 - 操作順利完成。
+
+--------------------------------------------------------------------------------
+[2025-10-16 20:52:39][2025-10-16 20:57:29][2025-10-16 21:01:08][2025-10-16 21:12:27] UnicodeDecodeError: 'cp950' codec can't decode byte 0x8f in position 55: illegal multibyte sequence
+Traceback (most recent call last):
+  File "E:\SL_nightreign\re_main.py", line 697, in <module>
+    config_manager = ConfigManager()
+  File "E:\SL_nightreign\re_main.py", line 61, in __init__
+    self.pool = json.load(file)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+UnicodeDecodeError: 'cp950' codec can't decode byte 0x8f in position 55: illegal multibyte sequence
+
+--------------------------------------------------------------------------------
+[2025-10-16 21:12:55][2025-10-16 21:15:56]

@@ -1,0 +1,58 @@
+#選擇存檔點 選擇要不要清空資料夾 (是:y  否:n)
+#例如  
+#sl_file: "20250913_201153"
+#clear_file :"y"
+sl_file: ""
+auto_sell: "y"
+clear_file: "y"
+
+
+#選擇模式
+#用 "暗痕" 抽 "永夜遺物": 1
+#用 "王證" 抽 "普通遺物": 2
+#用 "暗痕" 抽 "普通遺物": 3
+mod_type: 1
+
+#一輪抽幾顆(1~10)
+mod_many: 10
+
+#要拿幾顆(自己以王證、暗痕、背包空間評估) 例如背包剩50格 建議設5就好 因為一次通常為10抽
+peek: 3
+
+
+# 設定檔
+game_path: "C:/SteamLibrary/steamapps/common/ELDEN RING NIGHTREIGN/Game/nightreign.exe"
+
+# 原始檔路徑
+source_file: "C:/Users/Admin/AppData/Roaming/Nightreign/76561199196639648/NR0000.sl2"
+source_file_bak: "C:/Users/Admin/AppData/Roaming/Nightreign/76561199196639648/NR0000.sl2.bak"
+
+#文字辨識
+#https://github.com/tesseract-ocr/tesseract/releases/download/5.5.0/tesseract-ocr-w64-setup-5.5.0.20241111.exe
+ocr_path: "E:/OCR/tesseract.exe"
+
+
+            
+
+# 下面都不用改
+# 截圖區域(左上角 x 座標,左上角 y 座標,寬度（橫向）,高度（縱向）)
+region:
+  x: 668
+  y: 614
+  width: 633
+  height: 225
+ori_folder: "ori"
+save_folder: "save_folder"
+screenshot_folder: "screen_shot"
+asset_folder: "asset"
+relic_dic: "relic_dic.json"
+relic_dic_ch: "relic_dic_ch.json"
+wish_pool: wish_pool.json
+relic_log: relic_log.json
+log: log.txt
+images:
+  board: "board.png"
+  home: "home.png"
+  screenshot: "screenshot.png"
+  pot_screen_shot: "pot_screen_shot.png"
+  to_pot: "to_pot.png"
