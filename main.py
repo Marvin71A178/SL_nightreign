@@ -563,9 +563,7 @@ class ConfigManager:
         return reset_ori
 
     def load_sl_file(self,file_name,CLEAR_FILE):
-        print("正在load存檔")
         folders = os.listdir(self.SAVE_FOLDER)
-        
         exit_mux = False
         if file_name != "":
             if file_name in folders:
@@ -577,7 +575,10 @@ class ConfigManager:
                 shutil.copy2(file2, self.SOURCE_FILE_BAK)
                 print('已選擇存檔點')
                 exit_mux = True
-
+        else:
+            input("找不到檔案  輸入任意鍵終止")
+            sys.exit()
+            
         if CLEAR_FILE == "y":
             #清空
             folder = self.SAVE_FOLDER
@@ -615,8 +616,7 @@ class ConfigManager:
             if exit_mux:
                 input("✅ 已讀取 sl_file  輸入任意鍵終止")
                 sys.exit()
-        else:
-            input("找不到檔案  輸入任意鍵終止")
+        
             
         return
     
