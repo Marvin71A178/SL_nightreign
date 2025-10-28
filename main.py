@@ -575,9 +575,9 @@ class ConfigManager:
                 shutil.copy2(file2, self.SOURCE_FILE_BAK)
                 print('已選擇存檔點')
                 exit_mux = True
-        else:
-            input("找不到檔案  輸入任意鍵終止")
-            sys.exit()
+            else:
+                input("找不到檔案  輸入任意鍵終止")
+                sys.exit()
             
         if CLEAR_FILE == "y":
             #清空
