@@ -607,15 +607,14 @@ class ConfigManager:
                     print(f"⚠️ 無法刪除 {file_path}: {e}")
 
             print("✅ 已清空資料夾內容")
-
+        if exit_mux:
             self.config["sl_file"] = ""
-            self.config["clear_file"] = "y"
-            with open(self.cfg_path, "w", encoding="utf-8") as f:
-                self.rua_yaml.dump(self.config, f)
+        with open(self.cfg_path, "w", encoding="utf-8") as f:
+            self.rua_yaml.dump(self.config, f)
             
-            if exit_mux:
-                input("✅ 已讀取 sl_file  輸入任意鍵終止")
-                sys.exit()
+        if exit_mux:
+            input("✅ 已讀取 sl_file  輸入任意鍵終止")
+            sys.exit()
         
             
         return
